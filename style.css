@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #ffffff57, #ffffff5a), url(assets/web-bg.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 60px;
+}
+
+/* Company Logo */
+nav a:first-child {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 28px;
+
+}
+nav a:first-child img {
+    width: 40px;
+}
+
+nav a span {
+    font-family: "Pacifico", cursive;
+
+}
+
+/* Hamburger */
+nav button:first-of-type {
+    border: none;
+    background-color: transparent;
+    
+}
+nav button:first-of-type img {
+    width: 40px;
+}
+
+/* Conversion Section */
+section {
+    margin: 60px 0;
+}
+h1 {
+    font-family: "Moon Dance", cursive;
+    text-align: center;
+    font-size: 50px;
+    /* text-shadow: 2px 2px 30px #00f, 2px 2px #f00; */
+
+}
+
+.convert input {
+    border: none;
+    outline: none;
+    padding: 2px 0 2px 5px;
+}

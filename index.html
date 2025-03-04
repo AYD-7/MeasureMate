@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeasureMate</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/measure-tape.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Moon+Dance&family=Noto+Sans+Tagalog&family=Pacifico&family=Playwrite+IT+Moderna:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+        <!-- Navigation Bar -->
+        <nav>
+            <!-- Company's Logo -->
+            <a id="logo">
+                <!-- To dynamically pass in a value to both src and alt attributes using JS -->
+                <img src="" alt="" />
+                <span>MeasureMate</span>
+            </a>
+
+            <!-- Hamburger Button -->
+            <button type="button" id="hamBtn">
+                <!-- To dynamically pass in a value to both src and alt attributes using JS -->
+                <img src="" alt="" />
+            </button>
+        </nav>
+    </header>
+
+    <!-- Conversion Section -->
+    <section>
+        <!-- Heading -->
+        <h1>MeasureMate</h1>
+
+        <!-- Conversion Form -->
+        <form action="#" method="post">
+            <!-- Conversion Input -->
+            <div class="convert">
+                <label for="input">Input</label>
+                <input type="number" id="input" name="input" required />
+            </div>
+
+            <!-- Conversion Choices -->
+
+            <!-- From -->
+            <div class="convert">
+                <label for="from">From</label>
+
+                <select name="from" id="from">
+                    <!-- To dynamically populate options using JS -->
+                    <option value="yard">Yard</option>
+                </select>
+
+            </div>
+
+            <!-- To -->
+            <div class="convert">
+                <label for="to">To</label>
+
+                <select name="to" id="to">
+
+                    <!-- To dynamically populate options using JS -->
+                    <option value="cm">Centimetres</option>
+                </select>
+            </div>
+
+            <!-- Output -->
+            <div class="convert">
+                <label for="output">Output</label>
+                <input type="text" id="output" readonly />
+            </div>
+
+
+            <!-- Convert Button -->
+            <button id="convert"></button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

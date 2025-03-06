@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MeasureMate</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media-query.css">
     <link
       rel="shortcut icon"
       href="assets/measure-tape.png"
@@ -39,11 +40,14 @@
 
     <!-- Conversion Section -->
     <section>
-        <!-- Heading -->
-        <h1>MeasureMate</h1>
+       
 
         <!-- Conversion Form -->
         <form action="#" method="post">
+
+            <!-- Heading -->
+            <h1>MeasureMate</h1>
+            
             <!-- Conversion Input -->
             <div class="convert">
                 <label for="input">Input</label>
@@ -58,7 +62,6 @@
 
                 <select name="from" id="from">
                     <!-- To dynamically populate options using JS -->
-                    <option value="yard">Yard</option>
                 </select>
 
             </div>
@@ -68,22 +71,23 @@
                 <label for="to">To</label>
 
                 <select name="to" id="to">
-
                     <!-- To dynamically populate options using JS -->
-                    <option value="cm">Centimetres</option>
                 </select>
             </div>
+
+            <!-- Convert Button -->
+            <button id="convert"></button>
 
             <!-- Output -->
             <div class="convert">
                 <label for="output">Output</label>
-                <input type="text" id="output" readonly />
+                <div class="output" id="output">
+                    <!-- To dynamically update the output using JS -->
+                </div>
             </div>
 
-
-            <!-- Convert Button -->
-            <button id="convert"></button>
         </form>
+
     </section>
 
     <script src="script.js"></script>

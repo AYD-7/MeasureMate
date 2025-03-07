@@ -1,1 +1,470 @@
-/* Media Query For  */
+/* Media Query For different screen sizes */
+
+/* For small Mobile Phone */
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+    
+    nav {
+        padding: 5px 10px;
+    }
+    
+    /* Company Logo */
+    nav a:first-child {
+        font-size: 14px;
+    
+    }
+    nav a:first-child img {
+        width: 20px;
+    }
+    
+    /* Hamburger */
+    nav button:first-of-type img {
+        width: 20px;
+    }
+    
+    /* Conversion Section */
+    section {
+        margin: 10px 0 10px 4%;
+        width: 80vw;
+
+    }
+    
+    form {
+        margin-inline: 1.5rem;
+        padding: 1.5rem 1rem;
+        gap: 5px;
+    
+    }
+    h1 {
+        font-size: 30px;
+        margin-block: 1px;    
+    }  
+    
+    label {
+        font-size: 18px;
+    }
+    
+    .convert input, form button {
+        width: 200px;
+        padding: 1px 2.5px;
+        border-bottom: 2px solid #ffff;
+
+    }
+    .convert select {
+        width: 200px;
+    }
+    
+    .convert input:first-of-type {
+        margin-top: -15%;
+        padding-inline: 5px;
+    
+    }
+    .convert input:first-of-type:focus {
+        margin-top: -5%;
+        font-size: 14px;
+    }
+    
+    .convert select {
+        padding: 2.5px 5px;
+    }
+    
+    form button {
+        padding-block: 4px;
+        margin-top: 15px;
+        border-bottom: none;
+    }
+    
+    form button:hover {
+        background-color: #0080006a;
+    
+    }
+    
+    .convert div.output {
+        margin-top: 5px;
+        padding: 1px 2.5px;
+        width: 200px;
+        font-size: 16px;
+    }
+    
+    
+        
+}
+
+
+/* For medium Mobile Phone */
+@media only screen and (min-width: 360px) and (max-width: 389px) {
+    
+    nav {
+        padding: 15px 30px;
+    }
+    
+    /* Company Logo */
+    nav a:first-child {
+        font-size: 18px;
+    
+    }
+    nav a:first-child img {
+        width: 25px;
+    }
+    
+    /* Hamburger */
+    nav button:first-of-type img {
+        width: 25px;
+    }
+    
+    /* Conversion Section */
+    section {
+        margin: 70px 0 20px -1.5%;
+        width: 90vw;
+
+    }
+    
+    form {
+        margin-inline: 1.5rem;
+        padding: 1.5rem 1rem;
+        gap: 8px;
+    
+    }
+    h1 {
+        font-size: 30px;
+        margin-block: 1px;    
+    }  
+    
+    
+    
+    .convert input, form button {
+        width: 280px;
+        padding: 1px 2.5px;
+        border-bottom: 2px solid #ffff;
+
+    }
+    .convert select {
+        width: 280px;
+    }
+    
+    .convert input:first-of-type {
+        margin-top: -10%;
+        padding-inline: 6px;
+    
+    }
+    .convert input:first-of-type:focus {
+        margin-top: -5%;
+    }
+    
+    .convert select {
+        padding: 3px 6px;
+    }
+    
+    form button {
+        padding-block: 6px;
+        margin-top: 15px;
+        border-bottom: none;
+    }
+    
+    .convert div.output {
+        padding: 1px 2.5px;
+        width: 280px;
+    }
+    
+    
+        
+}
+
+
+/* For large Mobile Phone */
+@media only screen and (min-width: 390px) and (max-width: 499px) {
+    
+    nav {
+        padding: 20px 30px;
+    }
+    
+    /* Company Logo */
+    nav a:first-child {
+        font-size: 20px;
+    
+    }
+    nav a:first-child img {
+        width: 28px;
+    }
+    
+    /* Hamburger */
+    nav button:first-of-type img {
+        width: 28px;
+    }
+    
+    /* Conversion Section */
+    section {
+        margin: 90px 0 20px -1.0%;
+        width: 90vw;
+
+    }
+    
+    form {
+        padding: 2rem 1rem;    
+    }
+
+    h1 {
+        font-size: 35px;
+        margin-block: 1.5px;    
+    }  
+    
+    
+    .convert input, form button {
+        width: 300px;
+        padding: 1.5px 3px;
+        border-bottom: 3px solid #ffff;
+
+    }
+    .convert select {
+        width: 300px;
+        padding: 4px 8px;
+
+    }
+    
+    .convert input:first-of-type {
+        margin-top: -10%;
+        padding-inline: 6px;
+    
+    }
+    .convert input:first-of-type:focus {
+        margin-top: -5%;
+    }
+    
+    
+    form button {
+        padding-block: 7px;
+        margin-top: 16px;
+        border-bottom: none;
+    }
+    
+    .convert div.output {
+        padding: 1.5px 3px;
+        width: 300px;
+    }
+    
+    
+        
+}
+
+/* For small Tablet Device */
+@media only screen and (min-width: 500px) and (max-width: 639px) {
+    
+    nav {
+        padding: 25px 40px;
+    }
+    
+    /* Company Logo */
+    nav a:first-child {
+        font-size: 22px;
+    
+    }
+    nav a:first-child img {
+        width: 30px;
+    }
+    
+    /* Hamburger */
+    nav button:first-of-type img {
+        width: 30px;
+    }
+    
+    /* Conversion Section */
+    section {
+        margin: 100px 0 20px -1.0%;
+        width: 90vw;
+
+    }
+    
+    form {
+        padding: 2.2rem 1.2rem;    
+        gap: 12px
+    }
+
+    h1 {
+        font-size: 38px;
+        margin-block: 1.8px;    
+    }  
+    
+    
+    .convert input, form button {
+        width: 320px;
+        padding: 1.8px 3.5px;
+        border-bottom: 3px solid #ffff;
+
+    }
+    .convert select {
+        width: 320px;
+        padding: 4.5px 8.5px;
+
+    }
+    
+    .convert input:first-of-type {
+        margin-top: -10%;
+        padding-inline: 6px;
+    
+    }
+    .convert input:first-of-type:focus {
+        margin-top: -5%;
+    }
+    
+    
+    form button {
+        padding-block: 7.5px;
+        margin-top: 18px;
+        border-bottom: none;
+    }
+    
+    .convert div.output {
+        padding: 1.8px 3.5px;
+        width: 320px;
+    }
+    
+    
+        
+}
+
+/* For medium Tablet Device */
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+    
+    nav {
+        padding: 25px 45px;
+    }
+    
+    /* Company Logo */
+    nav a:first-child {
+        font-size: 24px;
+    
+    }
+    nav a:first-child img {
+        width: 33px;
+    }
+    
+    /* Hamburger */
+    nav button:first-of-type img {
+        width: 33px;
+    }
+    
+    /* Conversion Section */
+    section {
+        margin: 140px 0 20px -1.2%;
+        width: 90vw;
+
+    }
+    
+    form {
+        padding: 2.3rem 1.3rem;    
+        gap: 13px
+    }
+
+    h1 {
+        font-size: 40px;
+        margin-block: 1.8px;    
+    }  
+    
+    
+    .convert input, form button {
+        width: 350px;
+        padding: 1.8px 3.8px;
+        border-bottom: 3px solid #ffff;
+
+    }
+    .convert select {
+        width: 350px;
+        padding: 4.5px 8.5px;
+
+    }
+    
+    .convert input:first-of-type {
+        margin-top: -10%;
+        padding-inline: 6px;
+    
+    }
+    .convert input:first-of-type:focus {
+        margin-top: -5%;
+    }
+    
+    
+    form button {
+        padding-block: 7.5px;
+        margin-top: 18px;
+        border-bottom: none;
+    }
+    
+    .convert div.output {
+        padding: 1.8px 3.8px;
+        width: 350px;
+    }
+    
+    
+        
+}
+
+/* For large Tablet Device */
+@media only screen and (min-width: 768px) and (max-width: 883px) {
+    
+    nav {
+        padding: 28px 50px;
+    }
+    
+    
+    nav a:first-child img {
+        width: 35px;
+    }
+    
+    /* Hamburger */
+    nav button:first-of-type img {
+        width: 35px;
+    }
+    
+    /* Conversion Section */
+    section {
+        margin: 100px 0 20px 2.2%;
+        width: 90vw;
+
+    }
+    
+    form {
+        gap: 22px
+    }
+
+    h1 {
+        font-size: 45px;
+    }  
+    
+    
+    .convert input, form button {
+        border-bottom: 3px solid #ffff;
+
+    }
+    
+    
+    .convert input:first-of-type {
+        margin-top: -7%;
+        padding-inline: 6px;
+    
+    }
+    .convert input:first-of-type:focus {
+        margin-top: -1%;
+    }
+    
+    
+    form button {
+        border-bottom: none;
+    }
+      
+}
+
+/* For small Desktop Device */
+@media only screen and (min-width: 884px) and (max-width: 1023px) {
+    
+    /* Conversion Section */
+    section {
+        margin: 100px 0 20px 2.2%;
+        width: 90vw;
+
+    }
+    
+    form {
+        gap: 22px
+    }     
+    
+      
+}

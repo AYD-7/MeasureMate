@@ -21,6 +21,29 @@ hamBtn.style.cursor = "pointer";
 hamIcon.src = "assets/hamburger.svg";
 hamIcon.alt = "Hamburger Menu";
 
+// Function to toggle the menu
+const menu = document.getElementById("menu");// Getting the menu container
+hamBtn.addEventListener("click", function () {
+    menu.classList.toggle("show-menu");
+})
+
+// Getting the close button
+const closeBtn = document.getElementById("close-btn");
+
+// Function to remove the menu
+closeBtn.addEventListener("click", function () {
+    closeBtn.classList.toggle("btn-clicked");
+    menu.classList.remove("show-menu");
+})
+
+// Function to close menu when user click outside of menu or hamburger menu
+document.addEventListener("click", (event) => {
+    if(!menu.contains(event.target) && !hamBtn.contains(event.target)){
+        menu.classList.remove("show-menu");
+        closeBtn.classList.remove("btn-clicked");
+    }
+})
+
 // Getting the submit button
 const convertBtn = document.getElementById("convert");
 

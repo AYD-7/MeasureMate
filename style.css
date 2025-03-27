@@ -36,17 +36,87 @@ nav a:first-child img {
 
 nav a span {
     font-family: "Pacifico", cursive;
-
+    color: #228B22;
 }
 
 /* Hamburger */
 nav button:first-of-type {
     border: none;
     background-color: transparent;
-    
+    position: relative;
 }
 nav button:first-of-type img {
     width: 40px;
+}
+
+/* Menu */
+.menu {
+    display: none;
+    background-color: #ffff;
+    position: fixed;
+    top: 11.5%;
+    /* border-start-end-radius: 20px;
+    border-end-end-radius: 20px; */
+    width: 100vw;
+    height: 35vh;
+    z-index: 50;
+    padding: 20px 60px;
+    max-height: 0;
+    transition: ease-in-out 2s;
+}
+.show-menu {
+    display: block;
+    max-height: 35vh;
+}
+
+.close-btn{
+    display: none;
+    border: none;
+    padding: 3%;
+    border-radius: 100%;
+    background-color: transparent;
+    transition: ease-in-out .1s;
+}
+.btn-clicked {
+    border: 2px solid #000;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .container-item {
+    height: 350px
+}
+.container-heading {
+    font-weight: 800;
+    font-size: 32px;
+    text-decoration: 5px underline #228B22;
+    padding-bottom: 10px;
+    color: #2F4F4F;
+
+
+}
+.container-inner {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 10px;
+    gap: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.double-col {
+    grid-template-columns: auto auto;
+    column-gap: 40px;
+}
+.container-inner a {
+    text-decoration: none;
+    color: #2F4F4F;
+    transition: ease-in-out .3s;
+}
+.container-inner a:hover {
+    color: #2f4f4f80;
+    margin-left: 10px;
 }
 
 /* Conversion Section */

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry, this page does not exist!</title>
+    <link rel="stylesheet" href="sorry.css">
+    <link
+      rel="shortcut icon"
+      href="assets/measure-tape.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Moon+Dance&family=Noto+Sans+Tagalog&family=Pacifico&family=Playwrite+IT+Moderna:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body class="bg-[#212121] h-screen">
+    <!-- Company's logo -->
+    <a href="index.html" class="logo" id="konvata">MeasureMate</a>
+
+    <div class="container">
+       <img src="assets/sorry.svg" alt="sorry">
+
+        <p>
+            We're sorry, but the page you're looking for is currently unavailable. It’s not ready yet, but we’re working hard to bring it to you soon. Please check back later or <a href="index.html" class="measuremate">check our length converter app</a>. Thank you for your patience and understanding!
+        </p>
+
+        <a class="go-back block mx-auto text-center mt-6  text-sm lg:text-lg w-[100px] lg:w-[120px] bg-[#2e7d32] hover:bg-[#4caf50] text-[#f5f5f5] rounded-lg p-2" id="go-back">Go Back!</a>
+    </div>
+
+    <script>
+        // Making the Go Back link functional
+
+        const goBack = document.getElementById("go-back");
+
+        goBack.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            // Checking if there is a history to go back to
+            if (window.history.length > 1) {
+              window.history.back(); // Go back to the previous page
+            } else {
+              // Redirect to a fallback page if no history is available
+              alert('No previous page found in history.');
+              window.location.href = "index.html"; // Redirect to the home page
+            }
+        })
+
+        console.log(goBack);
+
+        console.log('History length:', window.history.length);
+
+    </script>
+
+</body>
+</html>
